@@ -56,11 +56,11 @@ number-plate-detection/
 | Stage                       | Image                                    | Description                                                                                |
 | --------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------ |
 | Original Image              | ![Original](./result.jpeg)               | The original input image of the car with visible number plate to be processed.             |
-| Gray Scale Image            | ![Gray](./gray_scaleimage.png)           | Image converted to grayscale to simplify processing by reducing color complexity.          |
+| Gray Scale Image            | ![Gray](./gray_scale_image.png)           | Image converted to grayscale to simplify processing by reducing color complexity.          |
 | Smoother Image              | ![Smooth](./smoother_image.png)          | Noise reduced using bilateral filter for better edge detection and contour identification. |
 | Canny Edge Detection        | ![Canny](./canny_edge.png)               | Detected edges using Canny algorithm to outline object boundaries clearly.                 |
 | Canny After Contouring      | ![Contour](./canny_after_contouring.png) | Contours drawn on the edge-detected image to visualize all detected shapes.                |
-| Top 30 Contours             | ![Top30](./top_30_contours.png)          | Highlights the top 30 contours based on area to filter potential number plate regions.     |
+| Top 30 Contours             | ![Top30](./top_30_contour.png)          | Highlights the top 30 contours based on area to filter potential number plate regions.     |
 | Final Detected Plate in Car | ![Final](./final_image.png)              | The best rectangular contour detected and highlighted — assumed to be the number plate.    |
 | Cropped Number Plate        | ![Plate](./number_plate.png)             | Final cropped image of the detected number plate region extracted from the original image. |
 
