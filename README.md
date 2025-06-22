@@ -51,19 +51,24 @@ number-plate-detection/
 
 ---
 
+
+
 ## 📷 Output Example
 
-| Stage                       | Image                                    | Description                                                                                |
-| --------------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Original Image              | ![Original](./result.jpeg)               | The original input image of the car with visible number plate to be processed.             |
-| Gray Scale Image            | ![Gray](./gray_scale_image.png)           | Image converted to grayscale to simplify processing by reducing color complexity.          |
-| Smoother Image              | ![Smooth](./smoother_image.png)          | Noise reduced using bilateral filter for better edge detection and contour identification. |
-| Canny Edge Detection        | ![Canny](./canny_edge.png)               | Detected edges using Canny algorithm to outline object boundaries clearly.                 |
-| Canny After Contouring      | ![Contour](./canny_after_contouring.png) | Contours drawn on the edge-detected image to visualize all detected shapes.                |
-| Top 30 Contours             | ![Top30](./top_30_contour.png)          | Highlights the top 30 contours based on area to filter potential number plate regions.     |
-| Final Detected Plate in Car | ![Final](./final_image.png)              | The best rectangular contour detected and highlighted — assumed to be the number plate.    |
-| Cropped Number Plate        | ![Plate](./number_plate.png)             | Final cropped image of the detected number plate region extracted from the original image. |
+<div align="center">
 
+| **Stage**                       | **Image**                                | **Description**                                                                                       |
+| ------------------------------- | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Original Image**              | ![Original](./original_image.png)        | Input image of the vehicle to begin number plate detection process.                                   |
+| **Gray Scale Image**            | ![Gray](./gray_scale_image.png)          | Converted to grayscale to reduce complexity for further processing like filtering and edge detection. |
+| **Smoother Image**              | ![Smooth](./smoother_image.png)          | Applied bilateral filter to smoothen the image and reduce noise while preserving edges.               |
+| **Canny Edge Detection**        | ![Canny](./canny_edge.png)               | Canny edge detection highlights sharp changes in intensity to identify potential plate boundaries.    |
+| **Canny After Contouring**      | ![Contour](./canny_after_contouring.png) | Contours drawn on Canny edge image to visualize all shape boundaries for further filtering.           |
+| **Top 30 Contours**             | ![Top30](./top_30_contour.png)           | Top 30 contours by area selected to narrow down potential number plate candidates.                    |
+| **Final Detected Plate in Car** | ![Final](./final_image.png)              | Best matching quadrilateral contour highlighted — likely to be the number plate area.                 |
+| **Cropped Number Plate**        | ![Plate](./number_plate.png)             | Number plate region cropped from the original image for final result.                                 |
+
+</div>
 
 
 
