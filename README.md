@@ -164,5 +164,5 @@ Feel free to fork this project, raise issues, or submit pull requests. Suggestio
 
 ### 🎯 Happy Coding and Plate Detecting! 🔍🚗
 
-```
+
 
